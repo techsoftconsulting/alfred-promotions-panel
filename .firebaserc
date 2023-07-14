@@ -1,0 +1,19 @@
+{
+  "projects": {},
+  "targets": {
+    "web-panel--prod-c262d": {
+      "hosting": {
+        "alfred-promotions-panel-prod": [
+          "alfred-promotions-panel-prod"
+        ]
+      }
+    },
+    "web-panel-c262d": {
+      "hosting": {
+        "alfred-promotions-panel-dev": [
+          "alfred-promotions-panel-dev"
+        ]
+      }
+    }
+  }
+}

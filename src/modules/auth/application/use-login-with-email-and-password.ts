@@ -37,6 +37,11 @@ export default function useLoginWithEmailAndPassword(): Login {
                     setLoading(false);
                     return;
                 }
+                if (e.message == 'INVALID_CREDENTIALS') {
+                    notify('Contraseña inválida', 'warning');
+                    setLoading(false);
+                    return;
+                }
                 setLoading(false);
                 notify('No fue posible iniciar sesión.', 'error');
             });

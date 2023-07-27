@@ -40,13 +40,13 @@ export default function Layout() {
                 options={{
                     drawerIcon: (props: any) => (
                             <Icon
-                                    name={'cog'}
-                                    type={'font-awesome'}
+                                    name={'user-cog'}
+                                    type={'font-awesome-5'}
                                     color={props.color ?? 'white'}
                                     numberSize={20}
                             />
                     ),
-                    title: 'Ajustes',
+                    title: 'Cuenta',
                     headerTitle: '',
                     headerShown: false
                 }}
@@ -110,7 +110,7 @@ export default function Layout() {
                 options={{
                     drawerIcon: (props: any) => (
                             <Icon
-                                    name={'user-cog'}
+                                    name={'users'}
                                     type={'font-awesome-5'}
                                     color={props.color ?? 'white'}
                                     numberSize={20}
@@ -120,8 +120,23 @@ export default function Layout() {
                     headerTitle: '',
                     headerShown: false
                 }}
+        />,
+        <AppDrawer.Screen
+                name={'account'}
+                options={{
+                    drawerIcon: (props: any) => (
+                            <Icon
+                                    name={'user-cog'}
+                                    type={'font-awesome-5'}
+                                    color={props.color ?? 'white'}
+                                    numberSize={20}
+                            />
+                    ),
+                    title: 'Cuenta',
+                    headerTitle: '',
+                    headerShown: false
+                }}
         />
-
     ];
 
     return (
